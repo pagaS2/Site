@@ -3,11 +3,11 @@ body{
 }
 .cabecalho{
     height: 100px;
-    text-align: right;
+    text-align: center;
     color: rgb(255, 255, 255);
     padding: 35px;
     padding-bottom: 15px;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Bebas Neue', cursive;
 }
 .links{
@@ -25,4 +25,18 @@ a{
     margin: 0 70px;
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+.apresentacao{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 25px;
+    text-align: justify;
+}
+.rodape{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    border: solid white;
+    width: 368px;
+    padding: 5px;
 }
