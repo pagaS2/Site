@@ -3,7 +3,9 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    perspective: 500px;
+    perspective: 25000px;
+    float: center;
+    
   }
   
   .cubo {
@@ -15,6 +17,7 @@ body {
     left: 650px;
     transform: rotateX(10deg) rotateY(10deg);
     animation: rotate 15s linear infinite;
+  
   }
   
   .face {
