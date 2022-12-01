@@ -4,28 +4,53 @@ body{
 }
 .cabecalho{
     height: 100px;
-    text-align: left;
+    text-align: auto;
     color: rgb(255, 255, 255);
-    padding: 35px;
     padding-bottom: 15px;
-    font-size: 50px;
+    font-size: 34px;
     font-family: 'Bebas Neue', cursive;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.cabecalho1{
+    height: 100px;
+    text-align: auto;
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 .links{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.336);
-    height: 40px;
+    align-items: auto;
+    justify-content: auto;
+    background-color: rgba(255, 255, 255, 0.366);
+    height: 65px;
     padding-top: 6px;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.icone1{
+    margin: 0 70px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 570px;
 }
 .paginas{
     margin: 0 70px;
     color: rgb(0, 0, 0);
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-top: 15px;
 }
 .apresentacao{
     font-family: 'Bebas Neue', cursive;
@@ -42,6 +67,7 @@ body{
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
+    margin-top: 100%;
 }
 .topicos{
     font-family: Arial, Helvetica, sans-serif;
@@ -54,22 +80,22 @@ body{
     font-size: 35px;
 }
 .fotos1{
-    width: 0 155px;
-    height: 250px;
-    float: right;
+    height: 350px;
+    margin-left: 480px;
+    float: center;
     border: solid 2px rgb(0, 0, 0);
 }
 .fotos2{
     width: 0 155px;
     height: 250px;
     float: right;
-    border: solid 2px rgb(0, 0, 0);
 }
 .texto{
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
-    margin: 25px;
+    width: 30%;
+    margin-left: 25px;
 }
 .desenvolvedores{
     color: rgb(255, 255, 255);
