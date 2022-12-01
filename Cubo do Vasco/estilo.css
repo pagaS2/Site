@@ -1,4 +1,4 @@
-body {
+.body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,9 @@ body {
     left: 650px;
     transform: rotateX(10deg) rotateY(10deg);
     animation: rotate 15s linear infinite;
+    margin-left: 270px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   
   }
   
