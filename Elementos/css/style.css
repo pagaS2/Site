@@ -13,7 +13,7 @@
     font-family: 'Bebas Neue', cursive;
     margin-left: 25px;
     margin-top: 15px;
-    box-shadow: 0px 0px rgba(255, 255, 255, 0.479);
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
 
 .cabecalho1 {
@@ -48,8 +48,11 @@
     font-size: 25px;
     margin-top: 15px;
     margin-left: 500px;
+     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
-
+.icone1 :hover{
+    color: rgb(255, 238, 1);
+}
 .paginas {
     margin: 0 70px;
     color: rgb(0, 0, 0);
@@ -58,6 +61,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     margin-top: 15px;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
 
 .apresentacao {
@@ -123,6 +127,7 @@
     font-size: 35px;
     width: 85%;
     margin-left: 25px;
+    
 }
 
 .desenvolvedores {
