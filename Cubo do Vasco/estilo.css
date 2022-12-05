@@ -17,7 +17,7 @@
   left: 650px;
   transform: rotateX(10deg) rotateY(10deg);
   animation: rotate 15s linear infinite;
-  margin-left: 270px;
+  margin-left: 170px;
   margin-top: 70px;
   margin-bottom: 70px;
 
@@ -69,5 +69,10 @@
 
   to {
     transform: rotateX(0deg) rotateY(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cubo{
+    margin-left: 200px;
   }
 }
