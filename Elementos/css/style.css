@@ -1,5 +1,5 @@
 .main {
-    background-color: rgb(0, 0, 0);
+    background-image: url(../img/vasco2.png);
     color: rgb(255, 255, 255);
     min-width: 300px;
     min-height: 1000px;
@@ -36,7 +36,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     margin-top: 15px;
-    margin-left: 500px;
+    margin-left: 400px;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
 
@@ -73,7 +73,7 @@
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
-    margin-top: 100%;
+    margin-top: 5%;
 }
 
 .topicos {
@@ -81,8 +81,17 @@
     font-size: 65px;
     margin: 25px;
     font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
-
+.topicos2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 25px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
+}
 .espaco {
     color: rgb(255, 255, 255);
     font-size: 35px;
@@ -103,11 +112,26 @@
     border-radius: 30px;
 }
 
+.fotos-gabriel {
+    width: 0 155px;
+    height: 30vh;
+    float: right;
+    display: inline;
+    border-radius: 30px;
+}
+.fotos-diego {
+    width: 0 155px;
+    height: 30vh;
+    float: right;
+    display: inline;
+    border-radius: 30px;
+}
+
 .texto {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
-    width: 30%;
+    width: 40%;
     margin-left: 25px;
 }
 
@@ -115,21 +139,38 @@
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
-    width: 85%;
+    width: 86%;
     margin-left: 25px;
-
 }
 
 .desenvolvedores {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
+    width: 86%;
+    margin-left: 25px;
 }
 
 .head {
     background-color: rgba(255, 255, 255, 0.366);
     padding: 5px;
     border-radius: 15px;
+}
+.titulo1{
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+.titulo2{
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -152,7 +193,7 @@
 
     .fotos2 {
         float: none;
-        margin-left: 20vw;
+        margin-left: 25vw;
     }
 
     .links,
@@ -166,12 +207,26 @@
         margin-left: 0px;
         font-size: 25px;
     }
-    .texto{
+
+    .texto {
         font-size: 35px;
         width: 90%;
         text-align: center;
     }
-    .rodape{
+
+    .rodape {
         font-size: 17px;
+    }
+    .desenvolvedores {
+        text-align: center;
+        margin-left: 47px;
+    }
+    .fotos-gabriel{
+        float: none;
+        margin-left: 34vw;
+    }
+    .fotos-diego{
+        float: none;
+        margin-left: 30vw;
     }
 }
