@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .main {
     background-image: url(../img/vasco2.png);
     color: rgb(255, 255, 255);
@@ -63,17 +67,20 @@
     margin-top: 55px;
     float: right;
 }
-
-.footer {
-    color: inherit;
-    text-decoration: none;
+.rodape1{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    margin-top: 5%;
 }
-
 .rodape {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     margin-top: 5%;
+}
+.rodape:hover{
+    color: rgba(255, 255, 255, 0.486);
 }
 
 .topicos {
@@ -83,6 +90,7 @@
     font-family: 'Bebas Neue', cursive;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
+
 .topicos2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 65px;
@@ -92,6 +100,7 @@
     font-family: 'Bebas Neue', cursive;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
+
 .espaco {
     color: rgb(255, 255, 255);
     font-size: 35px;
@@ -119,6 +128,7 @@
     display: inline;
     border-radius: 30px;
 }
+
 .fotos-diego {
     width: 0 155px;
     height: 30vh;
@@ -156,7 +166,8 @@
     padding: 5px;
     border-radius: 15px;
 }
-.titulo1{
+
+.titulo1 {
     text-align: right;
     margin-top: 25px;
     margin-right: 25px;
@@ -164,13 +175,79 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
 }
-.titulo2{
+
+.titulo2 {
     text-align: left;
     margin-top: 25px;
     margin-left: 25px;
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
+}
+
+.slides-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.image{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.botao {
+    text-align: center;
+}
+.botoes{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+.active, .botoes:hover{
+    background-color:rgba(255, 255, 255, 0.366);
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slides-text{
+    color: white;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bebas Neue', cursive;
+}
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
 }
 
 @media screen and (max-width: 768px) {
@@ -217,15 +294,18 @@
     .rodape {
         font-size: 17px;
     }
+
     .desenvolvedores {
         text-align: center;
         margin-left: 47px;
     }
-    .fotos-gabriel{
+
+    .fotos-gabriel {
         float: none;
         margin-left: 34vw;
     }
-    .fotos-diego{
+
+    .fotos-diego {
         float: none;
         margin-left: 30vw;
     }
