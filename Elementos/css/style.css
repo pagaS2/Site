@@ -104,7 +104,6 @@
 .espaco {
     color: rgb(255, 255, 255);
     font-size: 35px;
-    background-color: black;
 }
 
 .fotos1 {
@@ -245,6 +244,33 @@
     text-align: left;
     font-family: 'Bebas Neue', cursive;
 }
+.foto-titulo1{
+    width: 0 155px;
+    height: 30vh;
+    float: left;
+    display: inline;
+    border-radius: 30px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.foto-titulo2{
+    width: 0 155px;
+    height: 30vh;
+    float: right;
+    display: inline;
+    border-radius: 30px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.anos{
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 38%;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
 @keyframes fade{
     from{opacity: 0.4}
     to{opacity: 1}
@@ -308,5 +334,8 @@
     .fotos-diego {
         float: none;
         margin-left: 30vw;
+    }
+    .foto-titulo1{
+        float: none;
     }
 }
