@@ -1,0 +1,52 @@
+form{
+    width: 400px;
+    margin: 0 auto;
+}
+.box{
+    height:30px;
+    display:flex;
+    aling-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    background-color: inherit;
+    border:  solid 1px white;
+    padding-bottom: 50px;
+}
+.box{
+    height:30px;
+    display:flex;
+    aling-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: inherit;
+}
+.label{
+    width: 100px;
+    color: white;
+}
+.input{
+    width: 240px;
+}
+select{
+    width: 250px;
+    height: 30px;
+}
+.sex-radio{
+    width:250px;
+    color: white;
+}
+.box-text{
+    display:flex;
+    aling-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    background-color: inherit;
+    color: white;
+    padding-bottom: 25px;
+    max-width: 65;
+}
+.button{
+    height: 40px;
+    width: 100px;
+    margin-left: 260px;
+}

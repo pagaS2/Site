@@ -6,30 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gigantes da Colina</title>
-    <link rel="stylesheet" href="Elementos/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
+    <link rel="stylesheet" href="Elementos/css/reset.css">
     <link rel="icon" href="Elementos/img/vasco.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="Cubo do Vasco/estilo.css">
     <link rel="stylesheet" href="Elementos/css/style.css">
+    <link rel="stylesheet" href="Elementos/css/cards.css">
 </head>
 
 <body class="main">
 
     <div class="links">
-        <h1 class="cabecalho">Gigantes da colina </h1>
-        <a class="icone1" href="#" title="Página inicial">Home</a>
+        <a class="cabecalho" href="#" title="Home"><h1 class="">Gigantes da colina </h1></a>
+        <a class="icone1" href="Elementos/hinos.html" title="hinos">hinos</a>
         <a class="paginas" href="Elementos/quemsou.html" title="Sobre o site">Quem somos</a>
         <a class="paginas" href="Elementos/Titulos.html" title="Sobre o vasco">Sobre o vasco</a>
+        <a class="paginas" href="Elementos/contato.html" title="Contato">contato</a>
     </div>
     <div class="container">
         <div class="slides-container">
             <div class="slide">
-                <div class="image fade"><img src="Elementos/img/camisa.png" style="width: 100%; height: 500px";><div class="slides-text">
-                    testando chefe
-                </div></div>
-                <div class="image fade"><img src="Elementos/img/unitins.png" style="width: 100%; height: 500px;"></div>
+                <div class="image fade"><img src="Elementos/img/camisa.png" style="width: 100%; height: 500px" ;>
+                    <div class="slides-text">
+                        Olá,Bem Vindo ao Gigantes da colina
+                    </div>
+                </div>
+                <div class="image fade"><img src="Elementos/img/unitins.png" style="width: 100%; height: 500px;">
+                    <div class="slides-text">
+                        <a class="carrossel-link" href="https://www.unitins.br" target="_blank">unitins</a>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="prev" onclick="plusSlide(-1)">&#10094</a>
@@ -40,12 +47,47 @@
         </div>
     </div>
     </div>
+    <div class="cards">
+        <div class="card">
+            
+            <div class="card__contText">
+                <a class="card__link" href=""><h4 class="card__title"> hinos </h4></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__contText">
+                <h4 class="card__title"> Jogadores</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__contText">
+                <a class="card__link" href="Elementos/quemsou.html"><h4 class="card__title"> sobre o site</h4></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__contText">
+                <h4 class="card__title"> testando ainda </h4>
+                <p class="card__price">testando </p>
+            </div>
+        </div>
+    </div>
+    <p class="texto">patrocinadores</p>
+    <header class="patrocinio">
+        <a class="link-patrocinio" href="https://www.kappabrasil.com.br/" target="_blank"><img class="patrocinios"
+                src="Elementos/img/kappa.png" alt="" title="Kappa"></a>
+        <a class="link-patrocinio" href="https://pixbet.com/prejogo/" target="_blank"><img class="patrocinios"
+                src="Elementos/img/pixbet.png" alt="" title="Pixbet"></a>
+        <a class="link-patrocinio" href="https://www.bancobmg.com.br/vasco/" target="_blank"><img class="patrocinios"
+                src="Elementos/img/logo2.png" alt="" title="Banco BMG"></a>
+        <a class="link-patrocinio" href="https://www.tim.com.br/" target="_blank"><img class="patrocinios1"
+                src="Elementos/img/tim.svg" alt="" title="TIM"></a>
+    </header>
+   
 </body>
 <script src="Elementos/js/script.js"></script>
+<img class="img-footer" src="Elementos/img/unitins1.png" alt="">
 <footer class="rodape1">
     &copy site desenvolvido por Gabriel Chaves Paganotto e Diego Lima Licón; <a class="rodape"
         href="https://www.unitins.br" target="_blank">clique aqui para ir ao site da unitins</a>
 </footer>
-
-
 </html>

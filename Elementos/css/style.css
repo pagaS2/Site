@@ -1,6 +1,6 @@
-* {
+/* {
     box-sizing: border-box;
-}
+}*/
 
 .main {
     background-image: url(../img/vasco2.png);
@@ -8,7 +8,6 @@
     min-width: 300px;
     min-height: 1000px;
 }
-
 .cabecalho {
     text-align: auto;
     color: rgb(255, 255, 255);
@@ -25,7 +24,7 @@
     display: flex;
     align-items: auto;
     justify-content: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: inherit;
     height: 65px;
     padding-top: 6px;
     font-size: 22px;
@@ -40,14 +39,9 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     margin-top: 15px;
-    margin-left: 400px;
+    margin-left: 200px;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
-
-.icone1 :hover {
-    color: rgba(255, 255, 255, 0.366);
-}
-
 .paginas {
     margin: 0 70px;
     text-decoration: none;
@@ -57,7 +51,13 @@
     margin-top: 15px;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
-
+.carrossel-link{
+    text-decoration: none;
+    color: white;
+}
+.carrossel-link:hover{
+    color: rgba(0, 0, 0, 0.566)
+}
 .apresentacao {
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 255, 255);
@@ -72,6 +72,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     margin-top: 5%;
+    text-align: center;
 }
 .rodape {
     color: rgb(255, 255, 255);
@@ -105,19 +106,12 @@
     color: rgb(255, 255, 255);
     font-size: 35px;
 }
-
 .fotos1 {
-    height: 350px;
-    margin-left: 510px;
-    float: center;
-    border: solid 2px rgb(0, 0, 0);
-}
-
-.fotos2 {
     width: 0 155px;
     height: 30vh;
     float: right;
     border-radius: 30px;
+    margin-right: 15px;
 }
 
 .fotos-gabriel {
@@ -135,7 +129,25 @@
     display: inline;
     border-radius: 30px;
 }
-
+.link-patrocinio{
+    text-decoration: none;
+    display: flex;
+}
+.patrocinios{
+    display: inline;
+    margin: 0 120px;
+    max-width: 65%;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.patrocinios1{
+    display: inline;
+    margin: 0 90px;
+    max-width: 60%;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+}
 .texto {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
@@ -163,9 +175,17 @@
 .head {
     background-color: rgba(255, 255, 255, 0.366);
     padding: 5px;
-    border-radius: 15px;
+    
 }
-
+.patrocinio{
+    width: 100%;
+    display: flex;
+    align-items: auto;
+    justify-content: auto;
+    background-color: rgba(255, 255, 255, 0.366);
+    padding: 5px;
+    
+}
 .titulo1 {
     text-align: right;
     margin-top: 25px;
@@ -207,11 +227,15 @@
     user-select: none;
 }
 .next{
-    right: 0;
+    right: 77px;
     border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 77px;
 }
 .prev:hover, .next:hover{
     background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .botao {
@@ -251,7 +275,7 @@
     display: inline;
     border-radius: 30px;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 15;
 }
 .foto-titulo2{
     width: 0 155px;
@@ -262,14 +286,31 @@
     margin-right: 25px;
     margin-top: 25px;
 }
+.foto-titulo3{
+    width: 0 155px;
+    height: 40vh;
+    float: left;
+    display: inline;
+    border-radius: 30px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
 .anos{
     text-align: right;
     margin-top: 25px;
     margin-right: 25px;
-    margin-left: 38%;
+    margin-left: 55%;
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
+}
+.img-footer{
+    margin: 0 auto;
+    margin-bottom: -60px;
+    margin-top: 25px;
+    display: flex;
+    width: 5%;
+
 }
 @keyframes fade{
     from{opacity: 0.4}
@@ -283,7 +324,7 @@
         margin: 0px 0px 0px 0px;
         margin-top: 20px;
         margin-left: 25px;
-
+        font-size: 25px;
     }
 }
 
@@ -294,7 +335,7 @@
         height: 100%;
     }
 
-    .fotos2 {
+    .fotos1 {
         float: none;
         margin-left: 25vw;
     }
@@ -303,6 +344,7 @@
     .cabecalho {
         margin-top: 20px;
         margin-bottom: 6px;
+        font-size: 22px;
     }
 
     .apresentacao {
@@ -337,5 +379,11 @@
     }
     .foto-titulo1{
         float: none;
+    }
+    .next{
+        right: 0;
+    }
+    .prev{
+        left: 0;
     }
 }

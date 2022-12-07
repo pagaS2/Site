@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigantes da Colina</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="icon" href="./img/vasco.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="main">
+
+    <div class="links">
+        <a class="cabecalho" href="../index.html" title="Home"><h1 class="">Gigantes da colina </h1></a>
+        <a class="icone1" href="Elementos/hinos.html" title="hinos">hinos</a>
+        <a class="paginas" href="./quemsou.html" title="Sobre o site">Quem somos</a>
+        <a class="paginas" href="./Titulos.html" title="Sobre o vasco">Sobre o vasco</a>
+        <a class="paginas" href="#" title="Contato">contato</a>
+    </div>
+    <p class=""></p>
+    <form>
+        <div class="box">
+            <div class="label"><label for="nome">Nome:</label></div>
+            <input class="input" id="nome" type="text" placeholder="nome" required>
+        </div>
+        <div class="box">
+            <div class="label"><label for="email">E-mail:</label></div>
+            <input class="input" id="email" type="email" placeholder="e-mail" required>
+        </div>
+        <div class="box">
+            <div class="label"><label for="telefone">Telefone:</label></div>
+            <input class="input" id="telefone" type="tel" placeholder="telefone">
+        </div>
+        <div class="box">
+            <div class="label"><label for="estado">Estado:</label></div>
+            <select id="estado" onchange="estadoSelecionado()">
+                <option value=""disabled selected>Selecione...</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="TO">TO</option>
+            </select>
+        </div>
+        <div class="box">
+            <div class="label"><label for="cidade">Cidade:</label></div>
+            <select id="cidade">
+                <option value="" disabled selected>Selecione...</option>
+
+            </select>
+        </div>
+        <div class="box">
+            <div class="label"><label for="idade">Idade:</label></div>
+            <input class="input" id="idade" type="number" min="0" max="200" placeholder="idade">
+        </div>
+        <div class="box">
+            <div class="label">Sexo:</div>
+            <div class="sex-radio">
+                <input type="radio" id="sexo-m" name="sexo" value="Masculino" required>
+                <label for="sexo-m">Masculino</label>
+                <input type="radio" id="sexo-f" name="sexo" value="Feminino" required>
+                <label for="sexo-f">Feminino</label>
+            </div>
+        </div>
+        <div class="box">
+            <div class="label"><label for="motivo">Motivo:</label></div>
+            <select id="motivo" required>
+                <option value=""disabled selected>Selecione...</option>
+                <option value="duvida">Dúvida</option>
+                <option value="elogio">Elogio</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div class="box-text">
+            <label for="msg" style="padding-right: 5px;">Mensagem:</label>
+	        <textarea id="msg" name="msg" rows="10" cols="35" required></textarea>
+        </div>
+        <div class="box1">
+            <input class="button" type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+<script>
+    function estadoSelecionado(){
+        var estado = document.getElementById("estado");
+        var cidade = document.getElementById("cidade");
+        var x = cidade.options.length;
+        for (i=0; i<x; i++){
+            cidade.options.remove(1);
+        }
+        if(estado.value=='SP'){
+            var cidades_SP = [
+                'Araraquara',
+                'Campinas',
+                'Ibitinga',
+                'Santos',
+                'São Paulo',
+            ];
+            cidades_SP.forEach(function(item){
+                var opt = document.createElement("option");
+                opt.text = item
+                opt.setAttribute("value", item)
+                cidade.options.add(opt)
+            });
+        }
+        if(estado.value=='RJ'){
+            var cidades_RJ = [
+                'Belford Roxo',
+                'Duque de Caxias',
+                'Niterói',
+                'Nova Iguaçu',
+                'Rio de Janeiro',
+            ];
+            cidades_RJ.forEach(function(item){
+                var opt = document.createElement("option");
+                opt.text = item
+                opt.setAttribute("value", item)
+                cidade.options.add(opt)
+            });
+        }
+        if(estado.value=='TO'){
+            var cidades_TO = [
+                'Araguaina',
+                'Gurupi',
+                'Miracema',
+                'Palmas',
+                'Porto Nacional'
+            ];
+            cidades_TO.forEach(function(item){
+                var opt = document.createElement("option");
+                opt.text = item
+                opt.setAttribute("value", item)
+                cidade.options.add(opt)
+            });
+        }
+    }
+</script>
+<footer class="rodape1">
+    &copy site desenvolvido por Gabriel Chaves Paganotto e Diego Lima Licón; <a class="rodape"
+        href="https://www.unitins.br" target="_blank">clique aqui para ir ao site da unitins</a>
+</footer>
+</html>
