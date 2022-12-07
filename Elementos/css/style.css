@@ -8,6 +8,7 @@
     min-width: 300px;
     min-height: 1000px;
 }
+
 .cabecalho {
     text-align: auto;
     color: rgb(255, 255, 255);
@@ -42,6 +43,7 @@
     margin-left: 200px;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
+
 .paginas {
     margin: 0 70px;
     text-decoration: none;
@@ -51,13 +53,27 @@
     margin-top: 15px;
     text-shadow: 2px 1px rgba(255, 255, 255, 0.486);
 }
-.carrossel-link{
+.paginas1{
+    margin: 0 30px;
     text-decoration: none;
-    color: white;
+    font-size: 25px;
+    margin-top: 15px;
 }
-.carrossel-link:hover{
+.img-page{
+    display: flex;
+    width: 35px;
+
+}
+.carrossel-link {
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+}
+
+.carrossel-link:hover {
     color: rgba(0, 0, 0, 0.566)
 }
+
 .apresentacao {
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 255, 255);
@@ -67,20 +83,24 @@
     margin-top: 55px;
     float: right;
 }
-.rodape1{
+
+.rodape1 {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     margin-top: 5%;
     text-align: center;
+    padding-bottom: 10px;
 }
+
 .rodape {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     margin-top: 5%;
 }
-.rodape:hover{
+
+.rodape:hover {
     color: rgba(255, 255, 255, 0.486);
 }
 
@@ -106,6 +126,7 @@
     color: rgb(255, 255, 255);
     font-size: 35px;
 }
+
 .fotos1 {
     width: 0 155px;
     height: 30vh;
@@ -129,11 +150,13 @@
     display: inline;
     border-radius: 30px;
 }
-.link-patrocinio{
+
+.link-patrocinio {
     text-decoration: none;
     display: flex;
 }
-.patrocinios{
+
+.patrocinios {
     display: inline;
     margin: 0 120px;
     max-width: 65%;
@@ -141,19 +164,28 @@
     object-fit: contain;
     mix-blend-mode: color-burn;
 }
-.patrocinios1{
+
+.patrocinios1 {
     display: inline;
     margin: 0 90px;
     max-width: 60%;
     aspect-ratio: 2/1;
     object-fit: contain;
 }
+
 .texto {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     width: 40%;
     margin-left: 25px;
+}
+.texto-page{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    width: 75%;
+    margin-left: 85px
 }
 
 .texto2 {
@@ -162,6 +194,15 @@
     font-size: 35px;
     width: 86%;
     margin-left: 25px;
+}
+
+.texto-hino {
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    width: 45%;
+    margin: 0 auto 0 25px;
+    display: flex;
 }
 
 .desenvolvedores {
@@ -175,17 +216,27 @@
 .head {
     background-color: rgba(255, 255, 255, 0.366);
     padding: 5px;
-    
+
 }
-.patrocinio{
+
+.head-hino {
+    background-color: rgba(255, 255, 255, 0.366);
+    padding: 5px;
+    margin: 0 95px 0 95px;
+    border-radius: 30px;
+    box-shadow: 0 1px 5px 5px rgba(255, 255, 255, 0.596);
+}
+
+.patrocinio {
     width: 100%;
     display: flex;
     align-items: auto;
     justify-content: auto;
     background-color: rgba(255, 255, 255, 0.366);
     padding: 5px;
-    
+
 }
+
 .titulo1 {
     text-align: right;
     margin-top: 25px;
@@ -209,10 +260,13 @@
     position: relative;
     margin: auto;
 }
-.image{
+
+.image {
     display: none;
 }
-.prev, .next{
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -226,14 +280,18 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-.next{
+
+.next {
     right: 77px;
     border-radius: 3px 0 0 3px;
 }
-.prev{
+
+.prev {
     left: 77px;
 }
-.prev:hover, .next:hover{
+
+.prev:hover,
+.next:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
@@ -241,7 +299,8 @@
 .botao {
     text-align: center;
 }
-.botoes{
+
+.botoes {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -251,14 +310,18 @@
     display: inline-block;
     transition: 0.6s ease;
 }
-.active, .botoes:hover{
-    background-color:rgba(255, 255, 255, 0.366);
+
+.active,
+.botoes:hover {
+    background-color: rgba(255, 255, 255, 0.366);
 }
-.fade{
+
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-.slides-text{
+
+.slides-text {
     color: white;
     font-size: 35px;
     padding: 8px 12px;
@@ -268,7 +331,8 @@
     text-align: left;
     font-family: 'Bebas Neue', cursive;
 }
-.foto-titulo1{
+
+.foto-titulo1 {
     width: 0 155px;
     height: 30vh;
     float: left;
@@ -277,7 +341,8 @@
     margin-left: 25px;
     margin-top: 15;
 }
-.foto-titulo2{
+
+.foto-titulo2 {
     width: 0 155px;
     height: 30vh;
     float: right;
@@ -286,7 +351,8 @@
     margin-right: 25px;
     margin-top: 25px;
 }
-.foto-titulo3{
+
+.foto-titulo3 {
     width: 0 155px;
     height: 40vh;
     float: left;
@@ -295,7 +361,8 @@
     margin-left: 25px;
     margin-top: 25px;
 }
-.anos{
+
+.anos {
     text-align: right;
     margin-top: 25px;
     margin-right: 25px;
@@ -304,17 +371,42 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
 }
-.img-footer{
+
+.img-footer {
     margin: 0 auto;
     margin-bottom: -60px;
     margin-top: 25px;
     display: flex;
-    width: 5%;
+    width: 3%;
 
 }
-@keyframes fade{
-    from{opacity: 0.4}
-    to{opacity: 1}
+
+.img-hino {
+    clear: both;
+    display: flex;
+    align-self: flex-end;
+    width: 20%;
+    border-radius: 30px;
+}
+.img-hino1 {
+    top: 70%;
+    clear: both;
+    display: flex;
+    align-self: flex-end;
+    width: 20%;
+    border-radius: 30px;
+    margin-bottom: 275px;
+    margin-top: -70px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -377,13 +469,16 @@
         float: none;
         margin-left: 30vw;
     }
-    .foto-titulo1{
+
+    .foto-titulo1 {
         float: none;
     }
-    .next{
+
+    .next {
         right: 0;
     }
-    .prev{
+
+    .prev {
         left: 0;
     }
 }
